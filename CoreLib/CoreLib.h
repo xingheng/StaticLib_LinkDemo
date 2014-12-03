@@ -10,4 +10,6 @@
 
 @interface CoreLib : NSObject
 
+@property (nonatomic, strong) NSString *CoreLibVersion;
+
 @end
