@@ -16,6 +16,7 @@
 		68F6837D1A2F21A000D527C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F6837B1A2F21A000D527C4 /* LaunchScreen.xib */; };
 		68F683991A2F23F300D527C4 /* CoreLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68F683981A2F23F300D527C4 /* CoreLib.h */; };
 		68F6839B1A2F23F300D527C4 /* CoreLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F6839A1A2F23F300D527C4 /* CoreLib.m */; };
+		68F683AF1A2F25D400D527C4 /* libCoreLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F683961A2F23F300D527C4 /* libCoreLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F683AF1A2F25D400D527C4 /* libCoreLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
