@@ -13,7 +13,22 @@
 		68F683781A2F21A000D527C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F683761A2F21A000D527C4 /* Main.storyboard */; };
 		68F6837A1A2F21A000D527C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F683791A2F21A000D527C4 /* Images.xcassets */; };
 		68F6837D1A2F21A000D527C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F6837B1A2F21A000D527C4 /* LaunchScreen.xib */; };
+		68F683991A2F23F300D527C4 /* CoreLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68F683981A2F23F300D527C4 /* CoreLib.h */; };
+		68F6839B1A2F23F300D527C4 /* CoreLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F6839A1A2F23F300D527C4 /* CoreLib.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68F683941A2F23F300D527C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				68F683991A2F23F300D527C4 /* CoreLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		68F683691A2F21A000D527C4 /* StaticLib_LinkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticLib_LinkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +41,21 @@
 		68F683771A2F21A000D527C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68F683791A2F21A000D527C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		68F6837C1A2F21A000D527C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		68F683961A2F23F300D527C4 /* libCoreLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F683981A2F23F300D527C4 /* CoreLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreLib.h; sourceTree = "<group>"; };
+		68F6839A1A2F23F300D527C4 /* CoreLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreLib.m; sourceTree = "<group>"; };
+		68F683A61A2F23F400D527C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		68F683661A2F21A000D527C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F683931A2F23F300D527C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				68F6836B1A2F21A000D527C4 /* StaticLib_LinkDemo */,
+				68F683971A2F23F300D527C4 /* CoreLib */,
+				68F683A41A2F23F400D527C4 /* CoreLibTests */,
 				68F6836A1A2F21A000D527C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				68F683691A2F21A000D527C4 /* StaticLib_LinkDemo.app */,
+				68F683961A2F23F300D527C4 /* libCoreLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +108,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		68F683971A2F23F300D527C4 /* CoreLib */ = {
+			isa = PBXGroup;
+			children = (
+				68F683981A2F23F300D527C4 /* CoreLib.h */,
+				68F6839A1A2F23F300D527C4 /* CoreLib.m */,
+			);
+			path = CoreLib;
+			sourceTree = "<group>";
+		};
+		68F683A41A2F23F400D527C4 /* CoreLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				68F683A51A2F23F400D527C4 /* Supporting Files */,
+			);
+			path = CoreLibTests;
+			sourceTree = "<group>";
+		};
+		68F683A51A2F23F400D527C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68F683A61A2F23F400D527C4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +153,23 @@
 			productReference = 68F683691A2F21A000D527C4 /* StaticLib_LinkDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		68F683951A2F23F300D527C4 /* CoreLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F683A71A2F23F400D527C4 /* Build configuration list for PBXNativeTarget "CoreLib" */;
+			buildPhases = (
+				68F683921A2F23F300D527C4 /* Sources */,
+				68F683931A2F23F300D527C4 /* Frameworks */,
+				68F683941A2F23F300D527C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreLib;
+			productName = CoreLib;
+			productReference = 68F683961A2F23F300D527C4 /* libCoreLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +180,9 @@
 				ORGANIZATIONNAME = "Wei Han";
 				TargetAttributes = {
 					68F683681A2F21A000D527C4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					68F683951A2F23F300D527C4 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -127,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				68F683681A2F21A000D527C4 /* StaticLib_LinkDemo */,
+				68F683951A2F23F300D527C4 /* CoreLib */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +227,14 @@
 				68F683751A2F21A000D527C4 /* ViewController.m in Sources */,
 				68F683721A2F21A000D527C4 /* AppDelegate.m in Sources */,
 				68F6836F1A2F21A000D527C4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F683921A2F23F300D527C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F6839B1A2F23F300D527C4 /* CoreLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +356,28 @@
 			};
 			name = Release;
 		};
+		68F683A81A2F23F400D527C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68F683A91A2F23F400D527C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +395,14 @@
 			buildConfigurations = (
 				68F6838D1A2F21A000D527C4 /* Debug */,
 				68F6838E1A2F21A000D527C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68F683A71A2F23F400D527C4 /* Build configuration list for PBXNativeTarget "CoreLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F683A81A2F23F400D527C4 /* Debug */,
+				68F683A91A2F23F400D527C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
