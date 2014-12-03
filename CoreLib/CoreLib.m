@@ -14,6 +14,11 @@
 {
     if (self = [super init]) {
         self.CoreLibVersion = @"0.1.0";
+        
+        // Just choose a sample method call to validate link issue.
+        AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] init];
+        [operation setCompletionBlock:nil];
+        
     }
     return self;
 }

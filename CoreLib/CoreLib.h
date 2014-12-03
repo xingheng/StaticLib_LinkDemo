@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFHTTPRequestOperation.h>
 
 @interface CoreLib : NSObject
 
