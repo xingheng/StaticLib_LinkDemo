@@ -3,11 +3,8 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'StaticLib_LinkDemo' do
-
-end
-
 target 'CoreLib' do
   pod "AFNetworking", "~> 2.0"
+  pod "FMDB"
 end
 

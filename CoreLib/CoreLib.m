@@ -7,6 +7,7 @@
 //
 
 #import "CoreLib.h"
+#import <AFNetworking/AFHTTPRequestOperation.h>
 
 @implementation CoreLib
 
