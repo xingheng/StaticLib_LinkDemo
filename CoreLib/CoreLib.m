@@ -7,7 +7,6 @@
 //
 
 #import "CoreLib.h"
-#import <AFNetworking/AFHTTPRequestOperation.h>
 
 @implementation CoreLib
 
@@ -20,6 +19,8 @@
         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] init];
         [operation setCompletionBlock:nil];
         
+        FMDatabase *db = [FMDatabase databaseWithPath:@"sample_database_filepath_string"];
+        [db goodConnection];
     }
     return self;
 }

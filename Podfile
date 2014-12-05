@@ -1,10 +1,16 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
-source 'https://github.com/CocoaPods/Specs.git'
+def import_pods
+  pod 'AFNetworking', '2.5.0'
+  pod 'FMDB', '2.4'
+end
 
 target 'CoreLib' do
-  pod "AFNetworking", "~> 2.0"
-  pod "FMDB"
+  import_pods
+end
+
+target 'StaticLib_LinkDemo' do
+  import_pods
 end
 

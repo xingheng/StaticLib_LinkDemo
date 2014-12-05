@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFHTTPRequestOperation.h>
+#import <FMDB/FMDatabase.h>
 
 @interface CoreLib : NSObject
 
